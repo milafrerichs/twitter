@@ -1,0 +1,9 @@
+.row
+	.span12
+		%h1= "#{@user.name} (#{@user.screen_name})"
+		%img{'src'=>@user.profile_image_url}
+		%h2= @user.location
+		%ul
+			%li= "Followers: #{@user.followers_count}"
+			%li= "Follows: #{@user.friends_count}"
+			%li= "Favourites: #{@user.favourites_count}"
